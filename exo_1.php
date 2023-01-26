@@ -7,9 +7,9 @@
 <?php
 
 function convertirMajRouge($arg){
-    $arg = stroupper($arg);
-    return $arg
+    $arg = strtoupper($arg);
+    return '<span style="color:red;">' . $arg . '</span>';
 }
 
-echo convertirMajRouge("sdfsdf");
+echo convertirMajRouge("mon texte en parametre");
 ?>
