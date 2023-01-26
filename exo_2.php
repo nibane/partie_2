@@ -10,14 +10,19 @@ $capitales = array("France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","
 
 
 function afficherTableHTML($arg){
-    '<table>';
-    '<tr>';
-        echo '<th>Pays</th>';
-        echo '<th>Capitale</th>';
+    ksort($arg);
+    
+    
+    echo '<table>',
+    '<tr>',
+    '<th>Pays</th>' , 
+    '<th>Capitale</th>',
     '</tr>';
     foreach ($arg as $key => $value){
-        echo "<td>" . $key . $value . "</td>";
+        echo '<tr> <td>'. strtoupper($key) .'</td> <td>'. $value . '<t/d> </tr>';
+
     }
+    echo '</table>';
 }
 
 
