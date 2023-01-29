@@ -25,4 +25,3 @@ function afficherInput(array $arg){
 afficherInput($nomInput);
 
 ?>
-f
