@@ -31,3 +31,4 @@ function afficherTableHTML($arg){
 afficherTableHTML($capitales);
 
 ?>
+f
