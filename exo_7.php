@@ -12,7 +12,7 @@ $tabchoix = ["choix 1" => 0];
 function genererCheckbox($tab){
     foreach ($tab as $key=> $value){
         echo "<label for ='checkbox'>.$key.</label>";
-        echo "id = 'checkbox' name = 'checkbox'type = 'checkbox'";
+        echo "<input id = 'checkbox' name = 'checkbox'type = 'checkbox'>";
     }
   
 }
