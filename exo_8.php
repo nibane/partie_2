@@ -1,18 +1,18 @@
 <h1>Exercice 8<h/1>
 
-<p>Créer une fonction personnalisée permettant de générer des cases à cocher. On pourra préciser dans le tableau associatif si la case est cochée ou non.</p>
+<p>Soit l'URL suivante: http://my.mobirise.com/data/userpic/764.jpgCréer une fonction personnalisée permettant d'afficher l'image N fois à l'écran.</p>
 
 <h2></h2>
 
 
 <?php
 
-$zero = 0 ;
+
 
 
 function repeterImage($nb){
-    while ($nb > $zero) {
-        echo '<img src="iceland.jpg">';
+    while ($nb > 0) {
+        echo '<img src="764.jpg">';
         $nb--  ; 
     }
 
