@@ -7,9 +7,14 @@
 
 <?php
 
-function afficherRadio(...$numbers) {
-    foreach (...$numbers as $key)  
-        
+function afficherRadio(...$element) {
+    foreach ($element as $key) {
+        echo '<input type="radio">';
+        echo '<label for="html">'.$key.'</label><br>';
+    } 
+
 }
+
+afficherRadio("ptio","gerard","vélo")
 
 ?>
