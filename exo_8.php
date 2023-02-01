@@ -7,11 +7,11 @@
 
 <?php
 
-$nb_depart = 0
+$zero = 0 ;
 
 
 function repeterImage($nb){
-    while
+    while ($nb > $zero)
 
 }
 
