@@ -7,17 +7,22 @@
 
 <?php
 
-$tabchoix = ["choix 1" => 0];
+$tabchoix = ["choix 1" => 1];
 
 function genererCheckbox($tab){
     foreach ($tab as $key=> $value){
-        echo "<input id = 'checkbox' name = 'checkbox'type = 'checkbox'>";
+        if ($value == 0){
+            echo "<input id = 'checkbox' name = 'checkbox'type = 'checkbox'>";
+        }else {
+            echo "<input id = 'checkbox' name = 'checkbox'type = 'checkbox' checked>";
+        }
         echo "<label for ='checkbox'>$key</label>";
+
     }
   
 }
 
-genererCheckbox($tabchoix,1)
+genererCheckbox($tabchoix)
 
 
 ?>
