@@ -11,10 +11,14 @@ $zero = 0 ;
 
 
 function repeterImage($nb){
-    while ($nb > $zero)
+    while ($nb > $zero) {
+        echo '<img src="iceland.jpg">';
+        $nb--  ; 
+    }
 
 }
 
+repeterImage(2)
 
 
 ?>
