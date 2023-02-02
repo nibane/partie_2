@@ -20,7 +20,7 @@ $fmt = new IntlDateFormatter(
 // $ts = $fmt->parse('Lundi, 08 Juillet 2013 09:09');
 // echo $ts; 
 
-$date = new DateTime();
+$date = new DateTime('2018-02-23');
 
 echo $fmt->format($date);
 
