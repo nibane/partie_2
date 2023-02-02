@@ -8,7 +8,7 @@
 <?php
 
 //______________________________________EXO_5___________________________________________________
-$nomInput = ["Nom","Prénom","Ville"];
+$nomInput = ["Nom","Prénom","Adresse mail","Ville","Sexe",];
 
 function afficherInput(array $arg){
     echo "<form>";
