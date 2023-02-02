@@ -7,7 +7,10 @@
 
 <?php
 
+
+
 //______________________________________EXO_5___________________________________________________
+
 $nomInput = ["Nom","Prénom","Adresse mail","Ville","Sexe",];
 
 function afficherInput(array $arg){
@@ -32,10 +35,9 @@ function alimenterListeDeroulante ($arg){
     echo "</select>";
 }
 
-alimenterListeDeroulante($elements)
+alimenterListeDeroulante($elements);
 
-
-
+echo '<p><input type="submit" /></p>';
 
 
 
