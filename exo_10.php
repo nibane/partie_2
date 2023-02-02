@@ -20,8 +20,19 @@ function afficherInput(array $arg){
 
 afficherInput($nomInput);
 
+//______________________________________EXO_6___________________________________________________
 
 
+$elements = ["Monsieur","Madame","Mademoiselle"];
+
+function alimenterListeDeroulante ($arg){
+    echo "<select name = box>";
+    foreach($arg as $option)
+        echo"<option>".$option."</option>";
+    echo "</select>";
+}
+
+alimenterListeDeroulante($elements)
 
 
 
