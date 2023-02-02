@@ -1,8 +1,8 @@
-<h1>Exercice 11<h/1>
+<h1>Exercice 12<h/1>
 
-<p>Ecrire une fonction personnalisée qui affiche une date en français (en toutes lettres) à partir d'une chaîne de caractère représentant une date.Exemple:formaterDateFr("2018-02-23");Affichage vendredi 23 février 2018</p>
+<p>La fonction var_dump($variable)permet d'afficher les informations d'une variable.Soit le tableausuivant : $tableauValeurs=array(true,"texte",10,25.369,array("valeur1","valeur2"));A l'aide d'une boucle, afficher les informations des variables contenues dans le tableau.Affichagebool(true) string(5) "texte"int(10) float(25.369) array(2) { [0]=> string(7) "valeur1" [1]=> string(7) "valeur2" }</p>
 
-<h2></h2>
+<h2>Résultat</h2>
 
 
 <?php

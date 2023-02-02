@@ -2,7 +2,7 @@
 
 <p>Créer une fonctionpersonnalisée permettant d'afficher des boutons radio avec un tableau de valeurs en paramètre("Monsieur","Madame","Mademoiselle").</p>
 
-<h2></h2>
+<h2>Résultat</h2>
 
 
 <?php

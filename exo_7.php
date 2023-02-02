@@ -2,7 +2,7 @@
 
 <p>Créer une fonction personnalisée permettant de générer des cases à cocher. On pourra préciser dans le tableau associatif si la case est cochée ou non.</p>
 
-<h2></h2>
+<h2>Résultat</h2>
 
 
 <?php
