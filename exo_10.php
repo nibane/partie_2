@@ -23,7 +23,7 @@ afficherInput($nomInput);
 //______________________________________EXO_6___________________________________________________
 
 
-$elements = ["Monsieur","Madame","Mademoiselle"];
+$elements = ['Développeur Logiciel','Designer web','Intégrateur','Chef de projet'];
 
 function alimenterListeDeroulante ($arg){
     echo "<select name = box>";
