@@ -7,21 +7,22 @@
 
 <?php
 
-$fmt = new IntlDateFormatter(
-    "fr-FR", 
-    IntlDateFormatter::FULL, 
-    IntlDateFormatter::NONE, 
-    'Etc/UTC', 
-    IntlDateFormatter::GREGORIAN, 
-    'EEEE, dd MMMM y'
-);
+function formaterDateFr($date)
+{
+    $fmt = new IntlDateFormatter(
+        "fr-FR",
+            IntlDateFormatter::FULL,
+            IntlDateFormatter::NONE,
+        'Etc/UTC',
+            IntlDateFormatter::GREGORIAN,
+        'EEEE, dd MMMM y'
+    );
 
-// // parse
-// $ts = $fmt->parse('Lundi, 08 Juillet 2013 09:09');
-// echo $ts; 
+    $date = new DateTime($date);
 
-$date = new DateTime('2018-02-23');
+    echo $fmt->format($date);
+}
 
-echo $fmt->format($date);
+formaterDateFr("2018-02-23")
 
 ?>
