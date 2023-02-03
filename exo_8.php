@@ -2,7 +2,7 @@
 
 <p>Soit l'URL suivante: http://my.mobirise.com/data/userpic/764.jpgCréer une fonction personnalisée permettant d'afficher l'image N fois à l'écran.</p>
 
-<h2></h2>
+<h2>Résultat</h2>
 
 
 <?php
