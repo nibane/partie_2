@@ -15,6 +15,15 @@ class Voiture{
 
     //propriétés_________________________
     //méthodes___________________________
+    
+    function __construct($marque,$modele,$nbPortes,$vitesseActuelle){
+        $this->marque = $marque;
+        $this->modele = $modele;
+        $this->nbPortes = $nbPortes;
+        $this->vitesseActuelle = $vitesseActuelle;
+
+    }
+
     function set_marque($marque){
         $this->marque = $marque;
     }
@@ -71,7 +80,11 @@ class Voiture{
         $this->ralentir = $ralentir;
     }
     //___________________________________
-    
+    function __toString() {
+        return $this->marque . " " . $this->modele . " " . $this->nbportes;
+    }
+    //___________________________________
+
 
 
 }
