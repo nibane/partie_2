@@ -55,6 +55,7 @@ class Voiture{
     }
     //___________________________________
     //méthodes___________________________
+    //méthodes demarrer sert a demarrer une voiture
 
     public function demarrer(){
 
@@ -66,8 +67,20 @@ class Voiture{
             return "Le Vehicule ".$this->marque." ".$this->modele."  est déjà demarré."."<br>";
         }
     }
-    //_________________________________
-    //Magic méthod toString pour mise en forme par defaut à l'appel d'un objet Voiture___________________________________
+    //__________________________________
+    //méthodes accelerer permet d'augementer la valeur de vitesseActuelle.
+
+    public function accelerer($acceleration){
+        if($this->status == FALSE){
+            echo "La voiture est eteinte. <br>";
+        }
+        else {
+            $this->vitesseActuelle =+ $acceleration;
+            echo "La voiture accélére de ".$acceleration." est passe à ".$this->vitesseActuelle."<br>";
+        }
+    }
+
+    //Magic méthod toString pour mise en forme par defaut à l'appel d'un objet.Voiture___________________________________
     function __toString() {
         return $this->marque . " " . $this->modele . " " . $this->nbPortes."<br>";
     }
@@ -81,10 +94,8 @@ class Voiture{
 
 $v1 = new Voiture("Batmobile", "Char de combat", 1);
 
-echo $v1;
 
 
-$v1->demarrer();
-echo $v1->demarrer();
+
 
 ?>
