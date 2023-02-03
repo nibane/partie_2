@@ -93,8 +93,16 @@ class Voiture{
     }
     //_______________________________
     //méthodes info sert a afficher des infos sur la voiture.
-    public info($v){
-        echo
+    public function info(){
+        echo "Nom et modèle du véhicule : ".$this->marque." ".$this->modele."<br>";
+        echo "Nombre de portes : ".$this->nbPortes."<br>";
+        if ($this->status == FALSE){
+            echo "Le véhicule ".$this->marque."est arreter. <br>";
+        }else {
+            echo "Le véhicule ".$this->marque."est demarrer. <br>";
+        }
+
+        
     }
     
     //Magic méthod toString pour mise en forme par defaut à l'appel d'un objet.Voiture______________________________
@@ -116,7 +124,7 @@ echo $v1->demarrer();
 echo $v1->accelerer(30);
 echo $v1->accelerer(30); 
 echo $v1->stop();
-
+echo $v1->info();
 
 
 ?>
