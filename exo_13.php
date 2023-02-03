@@ -14,6 +14,7 @@ class Voiture{
     public $vitesseActuelle = 0;
 
     //propriétés_________________________
+    //méthodes___________________________
     function set_marque($marque){
         $this->marque = $marque;
     }
@@ -63,7 +64,14 @@ class Voiture{
         $this->stopper = $stopper;
     }
     //___________________________________
-
+    function get_ralentir(){
+        return $this->ralentir = $ralentir;
+    }
+    function set_ralentir($ralentir){
+        $this->ralentir = $ralentir;
+    }
+    //___________________________________
+    
 
 
 }
