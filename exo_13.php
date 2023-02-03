@@ -75,12 +75,29 @@ class Voiture{
             echo "La voiture est eteinte. <br>";
         }
         else {
-            $this->vitesseActuelle =+ $acceleration;
+            $this->vitesseActuelle += $acceleration;
             echo "La voiture accélére de ".$acceleration." est passe à ".$this->vitesseActuelle."<br>";
         }
     }
+    //___________________________________
+    //méthodes stop permet d'arreter le vehicule.
 
-    //Magic méthod toString pour mise en forme par defaut à l'appel d'un objet.Voiture___________________________________
+    public function stop(){
+        if($this->vitesseActuelle == 0){
+            echo "Le vehicule est déjà stopper.<br>";
+        }
+        else{
+            $this->vitesseActuelle = 0;
+            echo "La voiture est a ".$this->vitesseActuelle." <br>";
+        }
+    }
+    //_______________________________
+    //méthodes info sert a afficher des infos sur la voiture.
+    public info($v){
+        echo
+    }
+    
+    //Magic méthod toString pour mise en forme par defaut à l'appel d'un objet.Voiture______________________________
     function __toString() {
         return $this->marque . " " . $this->modele . " " . $this->nbPortes."<br>";
     }
@@ -94,7 +111,11 @@ class Voiture{
 
 $v1 = new Voiture("Batmobile", "Char de combat", 1);
 
-
+echo $v1;
+echo $v1->demarrer();
+echo $v1->accelerer(30);
+echo $v1->accelerer(30); 
+echo $v1->stop();
 
 
 
