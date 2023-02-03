@@ -43,21 +43,21 @@ class Voiture{
     }
     //___________________________________
     function get_demarrer(){
-
+        return $this->demarrer = $demarrer;
     }
     function set_demarrer($demarrer){
         $this->demarrer = $demarrer;
     }
     //___________________________________
     function get_accelerer(){
-        
+        return $this->accelerer = $accelerer;
     }
     function set_accelerer($accelerer){
         $this->accelerer = $accelerer;
     }
     //___________________________________
     function get_stopper(){
-        
+        return $this->stopper = $stopper;
     }
     function set_stopper($stopper){
         $this->stopper = $stopper;
