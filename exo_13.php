@@ -4,26 +4,28 @@
 
 <h2>Résultat</h2>
 
-
+<p></p>
 <?php
 
 class Voiture{
-    public $marque;
-    public $modele;
-    public $nbPortes;
-    public $vitesseActuelle = 0;
-
     //propriétés_________________________
-    //méthodes___________________________
-    
-    function __construct($marque,$modele,$nbPortes,$vitesseActuelle){
+    public string $marque;
+    public string $modele;
+    public int $nbPortes;
+    public int $vitesseActuelle;
+    public bool $status;
+
+    // constructeur 
+    function __construct(string $marque, string $modele, int $nbPortes){
         $this->marque = $marque;
         $this->modele = $modele;
         $this->nbPortes = $nbPortes;
-        $this->vitesseActuelle = $vitesseActuelle;
-
+        $this->vitesseActuelle = 0;
+        $this->status = FALSE;
+        
     }
 
+    //Getter et setter
     function set_marque($marque){
         $this->marque = $marque;
     }
@@ -52,41 +54,37 @@ class Voiture{
         return $this->vitesseActuelle;
     }
     //___________________________________
-    function get_demarrer(){
-        return $this->demarrer = $demarrer;
+    //méthodes___________________________
+
+    public function demarrer(){
+
+        if($this->status == FALSE){
+            $this->status = TRUE;
+            return "Le Vehicule ".$this->marque." ".$this->modele." demarre."."<br>";
+
+        }else {
+            return "Le Vehicule ".$this->marque." ".$this->modele."  est déjà demarré."."<br>";
+        }
     }
-    function set_demarrer($demarrer){
-        $this->demarrer = $demarrer;
-    }
-    //___________________________________
-    function get_accelerer(){
-        return $this->accelerer = $accelerer;
-    }
-    function set_accelerer($accelerer){
-        $this->accelerer = $accelerer;
-    }
-    //___________________________________
-    function get_stopper(){
-        return $this->stopper = $stopper;
-    }
-    function set_stopper($stopper){
-        $this->stopper = $stopper;
-    }
-    //___________________________________
-    function get_ralentir(){
-        return $this->ralentir = $ralentir;
-    }
-    function set_ralentir($ralentir){
-        $this->ralentir = $ralentir;
-    }
-    //___________________________________
+    //_________________________________
+    //Magic méthod toString pour mise en forme par defaut à l'appel d'un objet Voiture___________________________________
     function __toString() {
-        return $this->marque . " " . $this->modele . " " . $this->nbportes;
+        return $this->marque . " " . $this->modele . " " . $this->nbPortes."<br>";
     }
     //___________________________________
 
 
 
 }
+
+
+
+$v1 = new Voiture("Batmobile", "Char de combat", 1);
+
+echo $v1;
+
+
+$v1->demarrer();
+echo $v1->demarrer();
 
 ?>
