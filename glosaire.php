@@ -29,3 +29,16 @@ fera quel pouront etre utilisé
 comme base pour des filles
 mais quel ne pouront pas etre 
 utilisé
+
+
+interface INomInterface{
+    public function random();
+}
+
+une interface est une sorte de bloc de 
+code que l'on peut mettre en heritage
+comme les class mère mais la difference
+est qu'on doit utilisé le mot clé
+implements
+et qu'on peut implementer plusieur
+interface
