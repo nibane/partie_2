@@ -7,11 +7,13 @@
 
 <?php
 
-$url = "https://www.google.com/search?q=php+%21&rlz=1C1GCEA_enFR927FR927&ei=hMLgY7KGNbeTkdUP8fGquAw&ved=0ahUKEwiy2P-AxYD9AhW3SaQEHfG4CscQ4dUDCA8&uact=5&oq=php+%21&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECAAQQzIFCAAQgAQyBAgAEEMyBAgAEEMyBAgAEEMyBAgAEEMyBAgAEEMyBAgAEEMyBAgAEEMyBQgAEIAEOgoIABBHENYEELADOgYIABAWEB5KBAhBGABKBAhGGABQpwZY8iFgvyxoAXAAeACAATiIAZkCkgEBNpgBAKABAcgBCMABAQ&sclient=gws-wiz-serp";
-if (filter_var($url, FILTER_VALIDATE_URL)) {
-  echo("URL est valide");
+$url = "elan@elan-formation.fr";
+
+
+if (filter_var($url, FILTER_VALIDATE_EMAIL)) {
+  echo("L'adresse mail est valide");
 } else {
-  echo("URL n'est pas valide");
+  echo("L'adresse mail n'est pas valide");
 }
 
 ?>
