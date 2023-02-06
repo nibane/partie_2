@@ -33,6 +33,10 @@ class Voiture{
     function get_modele(){
         return $this->modele;
     }
+
+    function get_Infos(){
+        echo "Nom et modèle du véhicule : ".$this->marque." ".$this->modele."<br>";
+    }
 }
 class VoitureElec extends voiture{
     
@@ -42,10 +46,10 @@ class VoitureElec extends voiture{
         parent::__construct($marque,$modele);
         $this->autonomie = $autonomie;
     }
+    function get_Infos(){
+        echo "Nom et modèle du véhicule : ".$this->marque." ".$this->modele." ".$this->autonomie."<br>";
+    }
     
-    
-    
-
 
 }
 
