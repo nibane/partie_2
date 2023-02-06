@@ -34,11 +34,20 @@ class Voiture{
         return $this->modele;
     }
 }
-    class VoitureElec extends voiture{
+class VoitureElec extends voiture{
+    
     public int $autonomie;
 
-
+    public function __construct($marque, $modele, $autonomie){
+        parent::__construct($marque,$modele);
+        $this->autonomie = $autonomie;
     }
+    
+    
+    
+
+
+}
 
 
 
