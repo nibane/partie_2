@@ -9,7 +9,6 @@
 
 $url = "elan@elan-formation.fr";
 
-
 if (filter_var($url, FILTER_VALIDATE_EMAIL)) {
   echo("L'adresse mail est valide");
 } else {
