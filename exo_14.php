@@ -47,13 +47,13 @@ class VoitureElec extends voiture{
         $this->autonomie = $autonomie;
     }
     function get_Infos(){
-        echo "Nom et modèle du véhicule : ".$this->marque." ".$this->modele." ".$this->autonomie."<br>";
+        echo "Nom et modèle et autonomie du véhicule : ".$this->marque." ".$this->modele." ".$this->autonomie."<br>";
     }
     
 
 }
-
-
+$v1 = new Voiture("Peugeot", "408");
+echo $v1->get_Infos();
 
 
 
