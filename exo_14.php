@@ -33,15 +33,19 @@ class Voiture{
     function get_modele(){
         return $this->modele;
     }
-
-
-
-
-
-
-
-
 }
+    class VoitureElec extends voiture{
+    public int $autonomie;
+
+
+    }
+
+
+
+
+
+
+
 
 
 ?>
